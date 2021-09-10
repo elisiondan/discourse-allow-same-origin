@@ -3,4 +3,4 @@
 # version: 1
 # authors: Ben Miller
 
-Rails.application.config.action_dispatch.default_headers.merge!({'X-Frame-Options' => 'ALLOWALL'})
+Rails.application.config.action_dispatch.default_headers.except('X-Frame-Options')
